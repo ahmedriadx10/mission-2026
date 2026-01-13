@@ -406,10 +406,97 @@ padding: 40px 10px;
 
 
 
+/* responsive for tablet type device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+
+
+
+  .container{
+    width: 100%;
+  }
+
+
+
+
+  .banner_area_main,.goals_show,
+  #reverse_goals_content{
+    flex-direction: column;
+  }
+
+
+  
+.header_area{
+  padding: 50px 20px;
+}
+
+
+
+.banner_title h2{
+  font-size: 3.8rem;
+}
+
+
+.mission_area_title h3{
+  font-size: 3.8rem;
+
+}
+
+
+.mission_cards{
+  grid-template-columns:repeat(2,1fr);
+  padding: 20px;
+}
+
+
+#goals_img_right::before,#goals_img_left::before{
+  display: none;
+}
+
+
+.goals_show{
+  padding: 20px;
+  gap: 30px;
+  text-align: center;
+}
+
+.health_project{
+  gap: 25px;
+  text-align: center;
+padding: 40px 10px;
+}
+
+
+.health_project h3{
+  font-size: 3rem;
+}
+
+.health_project img{
+  max-width: 350px;
+}
+}
 
 
 
 
 
+@media screen and (min-width:992px) and (max-width:1250px){
+
+  .container{
+    padding: 0 20px;
+  }
+
+  #goals_img_right::before,#goals_img_left::before{
+  display: none;
+}
+
+.health_project{
+  gap: 40px;
+}
+
+.health_project_img::before{
+  display: none;
+}
 
 
+}
