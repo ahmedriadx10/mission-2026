@@ -95,7 +95,7 @@ line-height: 28px;
   color: var(--dark);
 }
 
-.banner_info h2 .banner_title_ye{
+.title_ye{
   color: var(--yellow);
 }
 
@@ -112,7 +112,61 @@ line-height: 28px;
 
 
 
-/*  */
+/* mission cards area */
+
+.mission_area_title{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.mission_area_title h3{
+  font-size: 4.8rem;
+  font-weight: bold;
+color: #13103A;
+
+}
+
+
+.mission_cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.mcard{
+  flex-direction: column;
+  gap: 20px;
+padding: 20px;
+border-radius:26px ;
+
+
+}
+
+.mcard img{
+  width: 126px;
+  height: 126px;
+}
+
+.mcard .mcard_title{
+  font-size:2.4rem ;
+  color: #000000;
+  font-weight: 600;
+}
+
+.mcard:nth-child(1){
+
+  background-color: rgba(79, 157, 166, 0.1);
+}
+.mcard:nth-child(2){
+
+  background-color: rgba(255, 89, 89, 0.1);
+}
+.mcard:nth-child(3){
+
+  background-color:rgba(255, 244, 214, 1);
+}
+
 
 
 
@@ -144,6 +198,16 @@ line-height: 28px;
 }
 
 
+.mission_area_title h3{
+  font-size: 3.8rem;
+
+}
+
+
+.mission_cards{
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
 
 
  
