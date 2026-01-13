@@ -303,7 +303,34 @@ z-index: -1;
 
 
 
+/* footer area  */
 
+footer{
+  background-color: #0B0D17;
+  padding: 40px;
+}
+
+.footer_main_container{
+
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.footer_main_container h6{
+  font-size: 3rem;
+   font-family: "Lobster", sans-serif;
+   color: var(--white);
+   margin-bottom: 20px;
+
+}
+
+.footer_main_container h6 .mission_2026{
+  color: var(--btn-color);
+}
 
 
 
