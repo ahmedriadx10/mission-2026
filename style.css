@@ -28,6 +28,7 @@ body{
 
 img{
   max-width: 100%;
+  
 }
 
 
@@ -46,7 +47,12 @@ line-height: 28px;
   color: var(--white);
   border: none;
   font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s linear;
 
+}
+.btn:hover{
+  box-shadow: 0 0 15px #FF5959;
 }
 
 .d-flex{
@@ -131,7 +137,7 @@ color: #13103A;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   padding: 20px 0;
-  gap: 20px;
+  gap: 40px;
 }
 
 .mcard{
@@ -167,6 +173,88 @@ border-radius:26px ;
   background-color:rgba(255, 244, 214, 1);
 }
 
+/* goals area */
+
+
+.goals_area_main{
+  padding: 50px 0;
+}
+.goals_show{
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+
+}
+
+.goals_img{
+  position: relative;
+}
+.goals_img img{
+  max-width: 400px;
+ width: 100%;
+}
+
+.goals_show_info{
+  max-width: 600px;
+  width: 100%;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.goals_show_info h3{
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.goals_show_info span{
+  display: block;
+}
+
+.goals_show_info button{
+
+  max-width: max-content;
+}
+
+
+#reverse_goals_content{
+  flex-direction: row-reverse;
+}
+
+
+#goals_img_left::before{
+  content: '';
+  width: 230px;
+  height: 230px;
+
+  background-image: url(./images/shapes/shape-1.png);
+  background-size: cover;
+ 
+  position: absolute;
+  top: 70px;
+  left: -100px;
+z-index: -1;
+  
+}
+#goals_img_right::before{
+  content: '';
+  width: 200px;
+  height: 200px;
+
+  background-image: url(./images/shapes/shape-1.png);
+  background-size: cover;
+ 
+  position: absolute;
+ 
+top: auto;
+bottom:-70px;
+right: -70px;
+z-index: -1;
+  
+}
+
+
+
 
 
 
@@ -181,7 +269,8 @@ border-radius:26px ;
 
 
 
-  .banner_area_main{
+  .banner_area_main,.goals_show,
+  #reverse_goals_content{
     flex-direction: column;
   }
 
@@ -207,6 +296,18 @@ border-radius:26px ;
 .mission_cards{
   grid-template-columns: 1fr;
   padding: 20px;
+}
+
+
+#goals_img_right::before,#goals_img_left::before{
+  display: none;
+}
+
+
+.goals_show{
+  padding: 20px;
+  gap: 30px;
+  text-align: center;
 }
 
 
